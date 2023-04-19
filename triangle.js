@@ -23,6 +23,10 @@ function triangleOutput(){
         'The triangle perimeter is ' + trianglePerimeter + "<br/>" +
         'The triangle area is ' + triangleArea + "<br/>";
       }
+      else if (a <= 0 || b <= 0 || c <= 0)
+      {
+        document.getElementById('output').innerHTML = 'Input has sides with invalid length (<= 0)'
+      }
       else if (!isNaN(a) || !isNaN(b) || !isNaN(c))
       {
         document.getElementById('output').innerHTML = 'Invalid side input was detected, try again'
